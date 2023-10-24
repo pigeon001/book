@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -8,17 +10,20 @@ html {
     padding: 0px;
     height: 100%;
     min-height: 600px;
-    font-family: Geneva, Tahoma, sans-serif, Verdana;
+
 }
 
 h1 {
     width: 100%;
     font-size: 2rem;
+    color: rgb(253, 234, 177);
     text-align: center;
     padding-bottom: .4rem;
-    border-bottom: 2px solid rgb(238, 180, 4);
+    border-bottom: 2px solid rgb(227, 190, 4);
     margin: 0px;
+    font-family: Oleo Script, Geneva, Audiowide, Tahoma, sans-serif, Verdana;
 }
+
 
 .head {
     position: sticky;
@@ -55,35 +60,46 @@ input,
 select {
     width: 100%;
     margin: 8px auto;
-    padding: 6px;
+    padding: .6em;
     border: 0px;
 }
 
 input,
 select {
     border-radius: 1em;
-
 }
 
-table {
+label {
+    font-size: larger;
+}
+
+/* table {
     margin: .8em auto;
 }
 
 td {
     border-right: 2px solid rgb(238, 180, 4);
     padding: .4em;
-}
+} */
 
 button {
     border-radius: 2em;
     padding: .8em;
     margin-top: .4em;
     border: 0px;
+    cursor: pointer;
+}
+
+input:hover,
+.search_box > form > button:hover,
+.sel :hover {
+    border: 2px solid rgb(247, 198, 51);
+    box-shadow: 0 0 3px rgb(247, 198, 51);
 }
 
 /* animations */
-
-/* @keyframes back_img {
+/* 
+@keyframes back_img {
     from {
         background-image: url('img/63.jpg');
         color: rgb(238, 180, 4);
@@ -91,7 +107,7 @@ button {
 
     to {
         background-image: url('img/62.jpg');
-        color: #fa8459;
+        border-bottom: 2px solid rgb(247, 198, 51);
     }
 } */
 
@@ -100,7 +116,7 @@ button {
 @keyframes text_align {
     0% {
         left: 28%;
-        border: none;
+        /* border: none; */
     }
 
     100% {
@@ -111,12 +127,12 @@ button {
 @keyframes heading_reverse {
     0% {
         left: -20%;
-        border: none;
+        /* border: none; */
     }
 
     100% {
         left: 0%;
-        border: none;
+        /* border: none; */
     }
 }
 
@@ -126,15 +142,16 @@ button {
     h1 {
         animation-name: text_align;
         animation-duration: 2s;
-        /* position: relative; */
+        border-bottom: 2px solid rgb(247, 198, 51);
+        color: rgb(247, 198, 51);
         text-align: left;
-        /* border-bottom: 2px solid #fa8459; */
+
     }
 
     /* body,
     html {
         animation-name: back_img;
-        animation-duration: 6s;
+        animation-duration: 4s;
         background-image: url('img/62.jpg');
 
     } */
@@ -240,7 +257,7 @@ button {
     margin: 0.8em;
     border-radius: 3rem;
     display: inline;
-    background-color: blue;
+    background-color: rgba(238, 180, 4, 0.2);
 
 }
 
@@ -298,7 +315,9 @@ button {
 
 .footer > button {
     margin: .5em auto;
+    cursor: pointer;
 }
+
 
 .footer > p {
     margin: 0;
