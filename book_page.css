@@ -8,7 +8,7 @@ html {
     padding: 0px;
     height: 100%;
     min-height: 600px;
-
+    font-family: Geneva, Tahoma, sans-serif, Verdana;
 }
 
 h1 {
@@ -22,7 +22,9 @@ h1 {
 
 .head {
     position: sticky;
-    top: 0px;
+    top: -1px;
+    background-color: rgba(246, 169, 15, .4);
+    margin: 0px;
 }
 
 
@@ -30,7 +32,7 @@ h1 {
     width: 100%;
     height: 100%;
     margin: 0px;
-    padding: 10px 0px;
+    padding: 0px;
     border-radius: 0 0 2em 2em;
     color: rgb(238, 180, 4);
     background-image: url('img/63.jpg');
@@ -44,9 +46,8 @@ h1 {
 .search_box {
 
     width: 70%;
-    margin: 4px auto;
+    margin: 1em auto;
 
-    /* background-color: aqua; */
 }
 
 label,
@@ -82,7 +83,7 @@ button {
 
 /* animations */
 
-@keyframes back_img {
+/* @keyframes back_img {
     from {
         background-image: url('img/63.jpg');
         color: rgb(238, 180, 4);
@@ -92,7 +93,7 @@ button {
         background-image: url('img/62.jpg');
         color: #fa8459;
     }
-}
+} */
 
 
 
@@ -127,7 +128,7 @@ button {
         animation-duration: 2s;
         /* position: relative; */
         text-align: left;
-        border-bottom: 2px solid #fa8459;
+        /* border-bottom: 2px solid #fa8459; */
     }
 
     /* body,
@@ -141,14 +142,14 @@ button {
     .container {
         animation-name: back_img;
         animation-duration: 6s;
-        color: #fa8459;
-        background-image: url('img/62.jpg');
+        /* color: #fa8459;
+        background-image: url('img/62.jpg'); */
     }
 
-    td {
+    /* td {
         border-color: #fa8459;
         padding: .6rem;
-    }
+    }*/
 }
 
 @media screen and (max-width:800px) {
