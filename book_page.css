@@ -99,12 +99,12 @@ input:hover,
 }
 
 .feed {
-    width: 70%;
+    width: 100%;
     margin: 1em auto;
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
     /* border: 2px solid rgb(247, 198, 51); */
     border-radius: 1rem;
-    padding: 1em;
+    /* padding: 1em; */
     display: flex;
     flex-direction: column;
     /* display: flex-box; */
@@ -213,6 +213,10 @@ input:hover,
         color: rgb(247, 198, 51);
         text-align: left;
 
+    }
+
+    .feed {
+        width: 60%;
     }
 
     /* body,
