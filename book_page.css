@@ -71,7 +71,7 @@ select {
 }
 
 label {
-    font-size: 1em;
+    font-size: .8em;
 }
 
 /* table {
@@ -272,8 +272,9 @@ input:hover,
     .search_box {
         width: 80%;
     }
-
-
+    label{
+        font-size: 1.2em
+    }
 }
 
 @media screen and (max-width:800px) {
